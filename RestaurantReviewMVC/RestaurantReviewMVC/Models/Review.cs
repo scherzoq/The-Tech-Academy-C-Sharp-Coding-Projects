@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,11 @@ namespace RestaurantReviewMVC.Models
         public int RestaurantID { get; set; }
         public int ReviewerID { get; set; }
         public Rating Rating { get; set; }
+        [DisplayName("Review Text")]
         public string ReviewText { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayName("Review Date")]
         public DateTime ReviewDate { get; set; }
         public virtual Restaurant Restaurant { get; set; }
         public virtual Reviewer Reviewer { get; set; }

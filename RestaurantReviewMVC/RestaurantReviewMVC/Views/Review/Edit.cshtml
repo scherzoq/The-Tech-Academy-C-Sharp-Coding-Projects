@@ -18,7 +18,7 @@
         @Html.HiddenFor(model => model.ReviewID)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RestaurantID, "RestaurantID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.RestaurantID, "Restaurant Name", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("RestaurantID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.RestaurantID, "", new { @class = "text-danger" })
@@ -26,7 +26,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ReviewerID, "ReviewerID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ReviewerID, "Reviewer Name", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ReviewerID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ReviewerID, "", new { @class = "text-danger" })
