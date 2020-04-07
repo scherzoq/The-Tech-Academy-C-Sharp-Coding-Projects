@@ -7,4 +7,4 @@ This web application integrates C#, HTML/CSS, JavaScript, and SQL. It is built u
 * Model-view-controller (MVC)
 * Entity Framework Code First. I learned about this topic independently, then applied what I'd learned to this project. This also gave me more general experience in learning about new aspects of software development on my own.
 * Testing/debugging. I used seed data to test every function of the site, methodically working through various problems in my code.
-* Researching solutions/overcoming roadblocks. For example: I researched solutions to various display issues, including issues relating to enums and default date values in the Edit views.
+* Researching solutions. E.g., I researched solutions to various display issues, including issues relating to enums and default date values in the Edit views.
